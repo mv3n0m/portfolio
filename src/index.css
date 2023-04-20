@@ -1,0 +1,39 @@
+:root {
+  --text-body: #000000cc;
+  --text-primary: #3B5A8E;
+  --text-secondary: #707070;
+  --text-tertiary: #6C757D;
+  --bg-body: #FBFCFF;
+  --bg-primary: #5270A3;
+  --bg-secondary: #F3F8FF;
+  --bg-tertiary: #0B2A971A;
+  --bg-grey: #E2E5EB;
+  --text-grey: #A9A9A9;
+  --border-light: #E2E5EB;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-bold";
+  src: local("Poppins-bold"),
+    url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: .875rem !important;
+  height: 100vh !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
