@@ -84,7 +84,22 @@ h1 {
 }
 
 .cloud {
+    margin-top: 50px;
     text-align: center;
     padding-right: 100px;
-    margin-top: 20px;
+}
+
+.about-me {
+    display: flex;
+    padding: 100px 12%;
+}
+
+.profile {
+    border-radius: 20px;
+    transform: rotate(-3deg);
+}
+
+.about-me > .section {
+    min-width: 60%;
+    margin-left: 50px;
 }

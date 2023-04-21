@@ -4,6 +4,7 @@ import Moon from 'assets/icons/moon.svg'
 import Header from 'assets/images/header.png'
 import Hero from './Hero'
 import Cloud from './Cloud'
+import AboutMe from './AboutMe'
 
 
 function Page() {
@@ -28,6 +29,7 @@ function Page() {
                 <img src={ Header } width={ 400 } />
             </div>
             <Cloud darkMode={ toggled } />
+            <AboutMe />
         </div>
     )
 }
