@@ -1,15 +1,24 @@
 :root {
-  --text-body: #000000cc;
-  --text-primary: #3B5A8E;
-  --text-secondary: #707070;
-  --text-tertiary: #6C757D;
-  --bg-body: #FBFCFF;
-  --bg-primary: #5270A3;
-  --bg-secondary: #F3F8FF;
-  --bg-tertiary: #0B2A971A;
-  --bg-grey: #E2E5EB;
-  --text-grey: #A9A9A9;
-  --border-light: #E2E5EB;
+  --text-primary: #111111;
+  --bg-primary: #eeeeee;
+  --text-secondary: #EEC16D;
+  --bg-secondary: #66BD88;
+  --bg-black: #000000;
+  --color0: #53B59F;
+  --color1: #10353B;
+  --color2: #005554;
+  --color3: #215641;
+  --color4: #3E877F;
+  --color5: #5FB962;
+  --color6: #AFC07C;
+  --color7: #EEC16D;
+  --color8: #E3E1D5;
+}
+
+[data-theme="dark"] {
+  --text-primary: #eeeeee;
+  --bg-primary: #212121;
+  --text-secondary: #3E877F;
 }
 
 @font-face {
@@ -32,8 +41,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: .875rem !important;
   height: 100vh !important;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.pointer {
+  cursor: pointer;
 }
