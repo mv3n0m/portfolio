@@ -1,8 +1,9 @@
 :root {
   --text-primary: #111111;
   --bg-primary: #eeeeee;
-  --text-secondary: #EEC16D;
+  --text-secondary: #53B59F;
   --bg-secondary: #66BD88;
+  --border: #EEC16D;
   --bg-black: #000000;
   --color0: #53B59F;
   --color1: #10353B;
@@ -18,7 +19,8 @@
 [data-theme="dark"] {
   --text-primary: #eeeeee;
   --bg-primary: #212121;
-  --text-secondary: #3E877F;
+  --text-secondary: #EEC16D;
+  --border: #53B59F;
 }
 
 @font-face {
@@ -51,4 +53,10 @@ body::-webkit-scrollbar {
 
 .pointer {
   cursor: pointer;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration-style: dotted;
+  font-style: italic;
 }

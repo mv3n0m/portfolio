@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import HeaderImage from 'assets/images/header.png'
 import Github from 'assets/icons/github.svg'
 import Linkedin from 'assets/icons/linkedin.svg'
+import Pph from 'assets/icons/pph.svg'
 import Typed from "typed.js";
 
 
@@ -37,8 +38,15 @@ function Header() {
                     <button className='view-cv btn'>View CV</button>
                 </div>
                 <div className='actions'>
-                    <img src={ Linkedin } width={ 30 } />
-                    <img src={ Github } width={ 30 } className="gt" />
+                    <a href="https://www.linkedin.com/in/m-vidali-espisato" target="_blank">
+                        <img src={ Linkedin } width={ 30 } />
+                    </a>
+                    <a href="https://github.com/Vidali-Espisato" target="_blank">
+                        <img src={ Github } width={ 30 } className="gt" />
+                    </a>
+                    <a href="https://www.peopleperhour.com/freelancer/technology-programming/manish-roy-python-web-developer-xxnwxwa#reviews" target="_blank" className='gt'>
+                        <img src={ Pph } height={ 30 } />
+                    </a>
                 </div>
             </div>
             <img src={ HeaderImage } width={ 400 } />

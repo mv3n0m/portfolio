@@ -72,13 +72,15 @@ h1 {
 
 .actions {
     margin-bottom: 40px;
+    display: flex;
+    align-items: baseline;
 }
 
 .gt {
     margin-left: 12px;
 }
 
-.actions > img:hover {
+.actions > a:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
