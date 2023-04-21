@@ -123,3 +123,15 @@ h1 {
     color: #a8a8a8;
     margin-top: 0;
 }
+
+.footer {
+    background-color: var(--bg-secondary);
+    padding: 20px 12%;
+    /* color: #212121; */
+    color: var(--bg-primary);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 50px;
+}
