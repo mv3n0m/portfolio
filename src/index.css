@@ -41,8 +41,6 @@ body {
   font-family: "Poppins" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: .875rem !important;
-  height: 100vh !important;
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }

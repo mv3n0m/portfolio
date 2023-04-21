@@ -29,7 +29,7 @@ function Header() {
 
     return (
         <div className='header'>
-            <div className='hero'>
+            <div>
                 <h1>¡Hola!</h1>
                 <h2 className='title'>I'm <span className='name'> Manish Roy</span></h2>
                 <h2 className='typed'>. . . a <span ref={ el }></span></h2>

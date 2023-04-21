@@ -22,13 +22,9 @@
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-}
-
-.hero {
-    width: 30%;
+    margin: 50px 12%;
 }
 
 h1 {
@@ -47,6 +43,7 @@ h1 {
     padding: 10px 30px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .btn:hover {
@@ -54,20 +51,20 @@ h1 {
 }
 
 .btns {
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .hire-me {
     background-color: var(--bg-secondary);
     border: 2px solid var(--bg-secondary);
     color: white;
+    margin-right: 20px;
 }
 
 .view-cv {
     background-color: transparent;
     border: 2px solid var(--bg-secondary);
     color: var(--bg-secondary);
-    margin-left: 20px;
 }
 
 .actions {
