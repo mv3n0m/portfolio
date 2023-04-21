@@ -6,6 +6,7 @@ import Cloud from './Cloud'
 import AboutMe from './AboutMe'
 import Experience from './Experience'
 import Footer from './Footer'
+import Contact from './Contact'
 
 
 function Page() {
@@ -29,6 +30,7 @@ function Page() {
             <Cloud darkMode={ toggled } />
             <AboutMe />
             <Experience />
+            <Contact />
             <Footer darkMode={ toggled } />
         </div>
     )
