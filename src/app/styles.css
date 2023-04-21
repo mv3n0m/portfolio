@@ -11,7 +11,7 @@
 }
 
 .toggle {
-    position: absolute;
+    position: fixed;
     right: 5%;
     top: 20px;
 }
@@ -102,4 +102,25 @@ h1 {
 .about-me > .section {
     min-width: 60%;
     margin-left: 50px;
+}
+
+.experience {
+    margin: 20px 12%;
+}
+
+.exp {
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.position {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+.company {
+    color: #a8a8a8;
+    margin-top: 0;
 }
