@@ -82,3 +82,9 @@ h1 {
     cursor: pointer;
     transform: scale(1.1);
 }
+
+.cloud {
+    text-align: center;
+    padding-right: 100px;
+    margin-top: 20px;
+}

@@ -7,7 +7,7 @@ import Typed from "typed.js";
 function Hero() {
     const el = useRef(null);
 
-    const typingStrings = ["Learner", "Generalist", "Fullstack Engineer", "Web3 Developer", "Freelancer", "Problem Solver", "Critical Thinker", "Software Engineer"]
+    const typingStrings = ["Fullstack Engineer", "Web3 Developer", "Freelancer", "Learner", "Generalist", "Problem Solver", "Critical Thinker", "Software Engineer"]
 
 
     useEffect(() => {

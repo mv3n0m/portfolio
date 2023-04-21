@@ -3,6 +3,7 @@ import Sun from 'assets/icons/sun.svg'
 import Moon from 'assets/icons/moon.svg'
 import Header from 'assets/images/header.png'
 import Hero from './Hero'
+import Cloud from './Cloud'
 
 
 function Page() {
@@ -26,6 +27,7 @@ function Page() {
                 <Hero />
                 <img src={ Header } width={ 400 } />
             </div>
+            <Cloud darkMode={ toggled } />
         </div>
     )
 }
