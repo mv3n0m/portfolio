@@ -5,10 +5,10 @@ import WordCloud from 'wordcloud'
 function Cloud({ darkMode }) {
     const el = useRef(null)
     const words = [
-        ["Python", 11],
+        ["Python", 12],
         ["Javascript", 12],
         ["React", 11],
-        ["Flask", 10],
+        ["Flask", 11],
         ["Solidity", 8],
         ["Rust", 4],
         ["Ethereum", 9],
