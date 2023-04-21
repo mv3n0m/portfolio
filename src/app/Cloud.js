@@ -7,7 +7,7 @@ function Cloud({ darkMode }) {
     const words = [
         ["Python", 11],
         ["Javascript", 12],
-        ["React.js", 11],
+        ["React", 11],
         ["Flask", 10],
         ["Solidity", 8],
         ["Rust", 4],
@@ -21,7 +21,12 @@ function Cloud({ darkMode }) {
         ["Bootstrap", 8],
         ["HTML", 8],
         ["CSS", 7],
-        ["AWS", 9]
+        ["AWS", 9],
+        ["Bash", 5],
+        ["Git", 6],
+        ["Redux", 7],
+        ["Vim", 4],
+        ["Lua", 4]
     ]
     const colors = [
         "#F2BD5A",
