@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Sun from 'assets/icons/sun.svg'
 import Moon from 'assets/icons/moon.svg'
-import Header from 'assets/images/header.png'
-import Hero from './Hero'
+import Header from './Header'
 import Cloud from './Cloud'
 import AboutMe from './AboutMe'
 
@@ -24,10 +23,7 @@ function Page() {
     return (
         <div className='page'>
             <img src={ icon } onClick={ handleToggle } className="pointer toggle" width={ 25 } />
-            <div className='header'>
-                <Hero />
-                <img src={ Header } width={ 400 } />
-            </div>
+            <Header />
             <Cloud darkMode={ toggled } />
             <AboutMe />
         </div>
