@@ -18,6 +18,7 @@
 
 .toggle:hover {
     transform: scale(1.3) rotate(-30deg);
+    transition: 0.5s ease;
 }
 
 .header {
@@ -48,6 +49,7 @@ h1 {
 
 .btn:hover {
     transform: scale(1.1);
+    transition: 0.5s ease;
 }
 
 .btns {
@@ -55,16 +57,16 @@ h1 {
 }
 
 .hire-me {
-    background-color: var(--bg-secondary);
-    border: 2px solid var(--bg-secondary);
+    background-color: var(--bg-accent);
+    border: 2px solid var(--bg-accent);
     color: white;
     margin-right: 20px;
 }
 
 .view-cv {
     background-color: transparent;
-    border: 2px solid var(--bg-secondary);
-    color: var(--bg-secondary);
+    border: 2px solid var(--bg-accent);
+    color: var(--bg-accent);
 }
 
 .actions {
@@ -74,12 +76,19 @@ h1 {
 }
 
 .gt {
-    margin-left: 12px;
+    margin-right: 12px;
 }
 
-.actions > a:hover {
+.gt:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
+.lt:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: 0.5s ease;
 }
 
 .cloud {
@@ -90,7 +99,7 @@ h1 {
 
 .about-me {
     display: flex;
-    padding: 100px 12%;
+    padding: 100px 12% 50px 12%;
 }
 
 .profile {
@@ -108,8 +117,8 @@ h1 {
 }
 
 .exp {
-    border: 2px solid var(--border);
     border-radius: 5px;
+    background-color: var(--bg-tertiary);
     padding: 10px 40px;
     margin-bottom: 20px;
 }
@@ -124,15 +133,40 @@ h1 {
     margin-top: 0;
 }
 
-.footer {
-    background-color: var(--bg-secondary);
-    padding: 20px 12%;
-    color: var(--bg-primary);
+.projects-section {
+    margin: 50px 12%;
+}
+
+.projects {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.project {
+    height: 250px;
+    background-color: var(--bg-tertiary);
+    border-radius: 5px;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.project > h3 {
+    color: var(--text-secondary);
+}
+
+.topics {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
     display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    align-items: center;
-    margin-top: 50px;
+}
+
+.topic {
+    background-color: var(--bg-secondary);
+    margin-left: 10px;
+    border-radius: 50px;
+    padding: 2px 15px;
 }
 
 .contact {
@@ -150,7 +184,7 @@ h1 {
 
 .form-control {
     background-color: #eeeeee;
-    border: 2px solid var(--border);
+    border: 2px solid var(--bg-accent);
     padding: 10px 20px;
     margin: 15px 0;
     width: 100%;
@@ -158,8 +192,8 @@ h1 {
 }
 
 .submit {
-    background-color: var(--bg-secondary);
-    border: 2px solid var(--bg-secondary);
+    background-color: var(--bg-accent);
+    border: 2px solid var(--bg-accent);
     color: white;
     margin-right: 20px;
 }
@@ -173,4 +207,15 @@ h1 {
 
 .submit:disabled:hover {
     transform: scale(1);
+}
+
+.footer {
+    background-color: var(--bg-accent);
+    padding: 20px 12%;
+    color: var(--bg-primary);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 50px;
 }

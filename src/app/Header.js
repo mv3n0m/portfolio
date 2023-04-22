@@ -34,18 +34,18 @@ function Header() {
                 <h2 className='title'>I'm <span className='name'> Manish Roy</span></h2>
                 <h2 className='typed'>. . . a <span ref={ el }></span></h2>
                 <div className='btns'>
-                    <button className='hire-me btn'>Hire Me!</button>
-                    <button className='view-cv btn'>View CV</button>
+                    <button className='hire-me btn shadow'>Hire Me!</button>
+                    <button className='view-cv btn shadow'>View CV</button>
                 </div>
                 <div className='actions'>
                     <a href="https://www.linkedin.com/in/m-vidali-espisato" target="_blank">
-                        <img src={ Linkedin } width={ 30 } />
+                        <img src={ Linkedin } width={ 30 } className="gt" />
                     </a>
                     <a href="https://github.com/Vidali-Espisato" target="_blank">
                         <img src={ Github } width={ 30 } className="gt" />
                     </a>
-                    <a href="https://www.peopleperhour.com/freelancer/technology-programming/manish-roy-python-web-developer-xxnwxwa#reviews" target="_blank" className='gt'>
-                        <img src={ Pph } height={ 30 } />
+                    <a href="https://www.peopleperhour.com/freelancer/technology-programming/manish-roy-python-web-developer-xxnwxwa#reviews" target="_blank">
+                        <img src={ Pph } height={ 30 } className="lt"/>
                     </a>
                 </div>
             </div>

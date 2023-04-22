@@ -15,11 +15,11 @@ function Contact() {
     return (
         <div className='contact'>
             <form className='form' onSubmit={ handleSubmit }>
-                <h3>Contact</h3>
+                <h2>Contact</h2>
                 <input className='name-input form-control' onChange={e => setName(e.target.value.trim())} placeholder="Name" />
                 <input className='email-input form-control' type="email" onChange={e => setEmail(e.target.value.trim())} placeholder="Email" />
                 <textarea className='query-input form-control' rows={ 5 } onChange={e => setQuery(e.target.value.trim())} placeholder="Query..." ></textarea>
-                <button type="submit" className='submit btn' disabled={ !name?.length || !email?.length || !query?.length }>Submit</button>
+                <button type="submit" className='submit btn shadow' disabled={ !name?.length || !email?.length || !query?.length }>Submit</button>
             </form>
             <img src={ ContactImage } width={ 400 } height={ 400 } />
         </div>

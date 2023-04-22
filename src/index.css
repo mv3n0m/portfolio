@@ -2,9 +2,11 @@
   --text-primary: #111111;
   --bg-primary: #eeeeee;
   --text-secondary: #53B59F;
-  --bg-secondary: #66BD88;
-  --border: #EEC16D;
-  --bg-black: #000000;
+  --bg-secondary: #EEC16D;
+  --bg-tertiary: #ffffff;
+  --bg-accent: #66BD88;
+  --shadow: #cdcdcd;
+
   --color0: #53B59F;
   --color1: #10353B;
   --color2: #005554;
@@ -20,7 +22,9 @@
   --text-primary: #eeeeee;
   --bg-primary: #212121;
   --text-secondary: #EEC16D;
-  --border: #53B59F;
+  --bg-secondary: #53B59F;
+  --bg-tertiary: #000000;
+  --shadow: #000000a8;
 }
 
 @font-face {
@@ -53,8 +57,18 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.shadow {
+  box-shadow: 5px 5px 10px var(--shadow);
+}
+
+.shadow:hover {
+  box-shadow: 10px 10px 20px var(--shadow);
+  transform: translateY(-10px);
+  transition: 0.5s ease;
+}
+
 a {
+  text-decoration: none;
   color: var(--text-primary);
-  text-decoration-style: dotted;
   font-style: italic;
 }
