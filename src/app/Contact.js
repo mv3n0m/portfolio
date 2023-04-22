@@ -13,7 +13,7 @@ function Contact() {
     }
 
     return (
-        <div className='contact'>
+        <div className='contact' id="contact">
             <form className='form' onSubmit={ handleSubmit }>
                 <h2>Contact</h2>
                 <input className='name-input form-control' onChange={e => setName(e.target.value.trim())} placeholder="Name" />

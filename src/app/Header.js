@@ -26,6 +26,15 @@ function Header() {
         };
     }, []);
 
+    const handleHire = () => {
+        const scrollTo = document.querySelector("#contact")
+        scrollTo.scrollIntoView({behavior: "smooth"})
+    }
+
+    const handleCV = () => {
+        const resume = document.querySelector("#resume")
+        resume.click()
+    }
 
     return (
         <div className='header'>
@@ -34,8 +43,8 @@ function Header() {
                 <h2 className='title'>I'm <span className='name'> Manish Roy</span></h2>
                 <h2 className='typed'>. . . a <span ref={ el }></span></h2>
                 <div className='btns'>
-                    <button className='hire-me btn shadow'>Hire Me!</button>
-                    <button className='view-cv btn shadow'>View CV</button>
+                    <button className='hire-me btn shadow' onClick={ handleHire }>Hire Me!</button>
+                    <button className='view-cv btn shadow' onClick={ handleCV }>View CV<a href="https://manish-roy.s3.ap-south-1.amazonaws.com/Manish+Roy+-+Resume.pdf" id="resume" target="_blank"/></button>
                 </div>
                 <div className='actions'>
                     <a href="https://www.linkedin.com/in/m-vidali-espisato" target="_blank">
