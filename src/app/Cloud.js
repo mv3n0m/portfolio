@@ -8,9 +8,11 @@ function Cloud({ darkMode }) {
         ["Python", 12],
         ["Javascript", 12],
         ["React", 11],
-        ["Flask", 11],
+        ["Typescript", 11],
+        ["Flask", 10],
         ["Solidity", 8],
-        ["Rust", 4],
+        ["Next", 11],
+        ["Rust", 9],
         ["Ethereum", 9],
         ["MongoDB", 10],
         ["SQL", 6],
@@ -19,6 +21,7 @@ function Cloud({ darkMode }) {
         ["Solana", 4],
         ["Django", 6],
         ["Bootstrap", 8],
+        ["TailwindCSS", 8],
         ["HTML", 8],
         ["CSS", 7],
         ["AWS", 9],
@@ -49,8 +52,8 @@ function Cloud({ darkMode }) {
             rotateRatio: 0.3,
             rotationSteps: 2,
             fontWeight: "bold",
-            gridSize: 30
-
+            gridSize: 15,
+            shape: "cardioid"
         })
     }, [ darkMode ])
 
