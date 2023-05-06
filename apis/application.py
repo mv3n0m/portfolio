@@ -1,14 +1,17 @@
 import os
 import json
 import requests
-from flask import make_response, jsonify, request, Flask, redirect
+from flask import make_response, jsonify, Flask
 from flask_cors import CORS
 from dotenv import load_dotenv
 
 load_dotenv()
 USERNAME = os.environ.get("USERNAME")
 API_TOKEN = os.environ.get("GITHUB_TOKEN")
-HEADERS = {'Authorization': f'token {API_TOKEN}', "Accept": "application/vnd.github.mercy-preview+json"}
+HEADERS = {
+    'Authorization': f'token {API_TOKEN}',
+    "Accept": "application/vnd.github.mercy-preview+json"
+}
 API_URL = "https://api.github.com/user/repos"
 
 application = Flask(__name__)
@@ -27,7 +30,7 @@ def fetch_projects():
     for repo in json.loads(response.content):
         is_forked = repo["fork"]
         topics = repo['topics']
-        if topics and not repo["fork"]:
+        if topics and not is_forked:
             project = {
                 "id": repo["id"],
                 "name": repo["name"],
@@ -44,4 +47,4 @@ def fetch_projects():
 
 
 if __name__ == "__main__":
-   application.run(port=8000, debug=True)
+    application.run(port=8000, debug=True)
