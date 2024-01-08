@@ -28,21 +28,46 @@
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: local("Poppins"),
-    url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-family: "Quantico-Italic";
+  src: local("Quantico-Italic"),
+    url("./assets/fonts/Quantico-Italic.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Poppins-bold";
-  src: local("Poppins-bold"),
-    url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-family: "computer_pixel-7";
+  src: local("computer_pixel-7"),
+    url("./assets/fonts/computer_pixel-7.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "PIXY";
+  src: local("PIXY"),
+    url("./assets/fonts/PIXY.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "unicode-00xx-square";
+  src: local("unicode-00xx-square"),
+    url("./assets/fonts/unicode-00xx-square.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cybersky Free Trial";
+  src: local("Cybersky Free Trial"),
+    url("./assets/fonts/Cybersky Free Trial.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"),
+    url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
 
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins" !important;
+  font-family: "Quantico-Italic" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary);
@@ -70,5 +95,4 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   color: var(--text-primary);
-  font-style: italic;
 }
