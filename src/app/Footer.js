@@ -1,5 +1,5 @@
 import React from 'react'
-import { ReactComponent as Twitter } from 'assets/icons/twitter.svg'
+import Pph from 'assets/icons/pph.svg'
 
 
 function Footer({ darkMode }) {
@@ -10,8 +10,8 @@ function Footer({ darkMode }) {
                 <h4>© All rights reserved. | { new Date().getFullYear() }</h4>
             </div>
             <div>
-                <a href="https://twitter.com/mbajaj74" target="_blank">
-                    <Twitter fill={ `#${ darkMode ? "212121" : "eeeeee" }` } />
+                <a href="https://www.peopleperhour.com/freelancer/technology-programming/manish-roy-python-web-developer-xxnwxwa#reviews" target="_blank" rel="noreferrer">
+                    <img src={ Pph } height={ 30 } className="lt"/>
                 </a>
             </div>
         </div>

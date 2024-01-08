@@ -1,16 +1,14 @@
-import React, { useEffect, useRef } from 'react'
-import HeaderImage from 'assets/images/header.png'
-import Github from 'assets/icons/github.svg'
-import Linkedin from 'assets/icons/linkedin.svg'
-import Pph from 'assets/icons/pph.svg'
+import React, { useEffect, useRef, useState } from 'react'
+import { FaLinkedinIn, FaGithubAlt, FaXTwitter } from "react-icons/fa6";
 import Typed from "typed.js";
+import Cloud from './Cloud'
 
 
-function Header() {
+function Header({darkMode}) {
     const el = useRef(null);
+    const [ parentD, setParentD ] = useState("row")
 
-    const typingStrings = ["Fullstack Engineer", "Web3 Developer", "Freelancer", "Learner", "Generalist", "Problem Solver", "Critical Thinker", "Software Engineer"]
-
+    const typingStrings = ["Fullstack Engineer", "Learner", "Web3 Security Researcher", "Web/3 Developer", "Generalist", "Software Engineer"]
 
     useEffect(() => {
         const typed = new Typed(el.current, {
@@ -37,28 +35,28 @@ function Header() {
     }
 
     return (
-        <div className='header'>
-            <div>
+        <div className={ `header header-${parentD}` }>
+            <div className='hero'>
                 <h1>¡Hola!</h1>
                 <h2 className='title'>I'm <span className='name'> Manish Roy</span></h2>
-                <h2 className='typed'>. . . a <span ref={ el }></span></h2>
+                <h2 className='typed'>. . a <span ref={ el }></span></h2>
                 <div className='btns'>
                     <button className='hire-me btn shadow' onClick={ handleHire }>Hire Me!</button>
-                    <button className='view-cv btn shadow' onClick={ handleCV }>View CV<a href="https://manish-roy.s3.ap-south-1.amazonaws.com/Manish+Roy+-+Resume.pdf" id="resume" target="_blank"/></button>
+                    <button className='view-cv btn shadow' onClick={ handleCV }>View CV<a href="https://manish-roy.s3.ap-south-1.amazonaws.com/Manish+Roy+-+Resume.pdf" id="resume" target="_blank" rel="noreferrer"/></button>
                 </div>
                 <div className='actions'>
-                    <a href="https://www.linkedin.com/in/m-vidali-espisato" target="_blank">
-                        <img src={ Linkedin } width={ 30 } className="gt" />
+                    <a href="https://www.linkedin.com/in/mv3n0m" target="_blank" rel="noreferrer">
+                        <FaLinkedinIn size="30" className="gt" />
                     </a>
-                    <a href="https://github.com/Vidali-Espisato" target="_blank">
-                        <img src={ Github } width={ 30 } className="gt" />
+                    <a href="https://github.com/mv3n0m" target="_blank" rel="noreferrer">
+                        <FaGithubAlt size="30" className="gt" />
                     </a>
-                    <a href="https://www.peopleperhour.com/freelancer/technology-programming/manish-roy-python-web-developer-xxnwxwa#reviews" target="_blank">
-                        <img src={ Pph } height={ 30 } className="lt"/>
+                    <a href="https://twitter.com/mv3n0m_" target="_blank" rel="noreferrer">
+                        <FaXTwitter size="30" className="gt" />
                     </a>
                 </div>
             </div>
-            <img src={ HeaderImage } width={ 400 } />
+            <Cloud darkMode={ darkMode } setParentD={ setParentD } />
         </div>
     )
 }

@@ -8,6 +8,7 @@
 .name {
     font-variant: small-caps;
     color: var(--color0);
+    font-size: 32px;
 }
 
 .toggle {
@@ -22,10 +23,19 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 50px 12%;
+    margin-top: 50px;
+    padding: 0 12%;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: "row";
+    justify-content: space-between;
+}
+
+.header-col {
+    flex-direction: "column";
 }
 
 h1 {
@@ -34,17 +44,21 @@ h1 {
 
 .typed {
     display: inline;
-    font-size: 24px;
+    font-size: 36px;
     color: var(--color7);
+    font-family: "computer_pixel-7" !important;
+    letter-spacing: 3px;
 }
 
 .btn {
     width: 150px;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 10px 30px;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
+    font-family: "PIXY";
+    font-size: 20px;
 }
 
 .btn:hover {
@@ -70,13 +84,13 @@ h1 {
 }
 
 .actions {
-    margin-bottom: 40px;
     display: flex;
     align-items: baseline;
 }
 
 .gt {
     margin-right: 12px;
+    color: #53B59F;
 }
 
 .gt:hover {
@@ -93,23 +107,17 @@ h1 {
 
 .cloud {
     margin-top: 50px;
-    text-align: center;
-    padding-right: 100px;
 }
 
-.about-me {
-    display: flex;
-    padding: 100px 12% 50px 12%;
-}
-
-.profile {
-    border-radius: 20px;
-    transform: rotate(-3deg);
-}
-
-.about-me > .section {
+.section {
     min-width: 60%;
-    margin-left: 50px;
+    margin: 80px 12%;
+}
+
+.section-title {
+    font-family: "Cybersky Free Trial";
+    font-size: 32px;
+    text-align: left !important;
 }
 
 .experience {
@@ -126,6 +134,8 @@ h1 {
 .position {
     color: var(--text-secondary);
     margin-bottom: 0;
+    font-family: "PIXY";
+    font-size: 20px;
 }
 
 .company {
@@ -140,7 +150,7 @@ h1 {
 .projects {
     display: grid;
     gap: 30px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr) );
 }
 
 .project {
@@ -153,6 +163,8 @@ h1 {
 
 .project > h3 {
     color: var(--text-secondary);
+    font-family: "PIXY";
+    font-size: 20px;
 }
 
 .project > h5 {
@@ -177,8 +189,13 @@ h1 {
 }
 
 .contact {
+    text-align: center;
+}
+
+/* .con1 */
+
+.contact-row {
     display: flex;
-    margin: 50px 12%;
     justify-content: space-between;
     align-items: center;
 }
@@ -186,14 +203,15 @@ h1 {
 .form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* flex-grow: 1; */
+    width: 100%;
 }
 
 .form-control {
     background-color: #eeeeee;
     border: 2px solid var(--bg-accent);
     padding: 10px 20px;
-    margin: 15px 0;
+    margin-bottom: 20px;
     width: 100%;
     border-radius: 5px;
 }
